@@ -1,0 +1,340 @@
+/* General Styles */
+body {
+ 
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background: url("pexels-vlada-karpovich-4452502.jpg");
+  font-family: Arial, sans-serif;
+  background-color: black;
+  background-color: rgb(145, 37, 37);
+  background-size: cover;
+ 
+
+
+  
+}
+
+
+
+
+.Edication h2{
+color: gold;
+}
+
+/* Styling of the header*/
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 10px 20px;
+  z-index: 1000;
+  }
+  
+  
+  nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  }
+  
+  
+  .tad {
+  padding: 7px;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 1s ease, opacity 1s ease;
+  }
+  
+  
+  .tad:hover {
+  color: whitesmoke; 
+  }
+  
+  nav:hover .tad {
+  opacity: 0.3;
+  }
+  
+  nav:hover .tad:hover {
+  opacity: 1;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Adjusting Content Area (Left Section) */
+.Edication {
+  flex: 1; /* Ensures it takes available space */
+  padding: 20px;
+  text-align: left; /* Aligns the text to the left */
+  margin-right: 20px; /* Adds spacing between content and the slide-in area */
+}
+
+/* Hover Area Styles */
+.right-hover-area {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 54%; /* Restricts the hover area to the right half */
+  height: 100%; /* Full height of the section */
+  background: transparent; /* Keeps the hover area invisible */
+  overflow: hidden; /* Prevents content spilling */
+  pointer-events: auto; /* Allows mouse interaction */
+}
+
+/* Hidden Container within Right Hover Area */
+.container {
+  position: absolute;
+  top: 50%; /* Centers vertically */
+  right: -100%; /* Hidden off-screen initially */
+  border-radius: 20px;
+  transform: translateY(-50%); /* Vertical centering adjustment */
+  width: 80%; /* Fits within hover area */
+  opacity: 0; /* Initially invisible */
+  transition: right 0.7s ease, opacity 0.7s ease; /* Smooth slide-in effect */
+  background: maroon;
+  
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Hover Effect */
+.right-hover-area:hover .container {
+  right: 0; /* Slides into the right half */
+  opacity: 1; /* Becomes visible */
+}
+
+/* Styling for Flex Items */
+.flex-item {
+  margin-bottom: 15px;
+}
+
+.flex-item img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.flex-item p {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+
+
+
+
+      /* Button Styling */
+      .download-btn {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        z-index: 1000;
+        background-color: maroon;
+        text-decoration: none;
+        border: none;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius:25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  
+      .download-btn:hover {
+        background-color: #600000; /* Darker maroon on hover */
+      }
+
+
+
+
+
+
+
+
+      /* Button Styling */
+      .fill-button{
+        position: absolute;
+        top: 180px;
+        left: 0;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        z-index: 1000;
+        background-color: maroon;
+        text-decoration: none;
+        border: none;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius:25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  
+      .fill-button:hover {
+        background-color: #600000; /* Darker maroon on hover */
+      }
+
+
+
+
+
+      .more-button{
+        position: absolute;
+        top: 140px;
+        left: 0;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        z-index: 1000;
+        background-color: maroon;
+        text-decoration: none;
+        border: none;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius:25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  
+      .more-button:hover {
+        background-color: #600000; /* Darker maroon on hover */
+      }
+
+
+
+
+
+      /* Button Styling */
+      .next-button{
+        position: absolute;
+        top: 220px;
+        left: 0;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        z-index: 1000;
+        background-color: maroon;
+        text-decoration: none;
+        border: none;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius:25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  
+      .next-button:hover {
+        background-color: #600000; /* Darker maroon on hover */
+      }
+
+
+
+
+
+
+      
+  /* Container styling */
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 16px; /* Space between items */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1000px; /* Restrict maximum width */
+  }
+  
+  /* Heading styles */
+  .container h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  /* Flexbox for items */
+  .flex-item {
+    position: relative;
+    padding: 10px;
+    width: 200px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+  }
+  
+  /* Front image (default view) */
+  .flex-item .front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures proper scaling without distortion */
+    transition: opacity 0.5s ease;
+    z-index: 1;
+  }
+  
+  /* Back image (hidden by default) */
+  .flex-item .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures proper scaling without distortion */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease;
+    z-index: 0;
+  }
+  
+  /* Hover effect: show the back image */
+  .flex-item:hover .front {
+    opacity: 0;
+  }
+  
+  .flex-item:hover .back {
+    opacity: 1;
+  }
+  a{
+    text-decoration: none;
+  }
+  /* Paragraph styling */
+  .flex-item p {
+    position: absolute;
+    bottom: 0; /* Stick to the bottom of the flex box */
+    left: 0;
+    width: 100%;
+    color: #333;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.9); /* Subtle background */
+    padding: 5px;
+    box-sizing: border-box;
+    z-index: 2; /* Ensure it stays above the images */
+  }
+  
+  
+  

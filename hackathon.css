@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background: url("pexels-garrettmorrow-1337247.jpg");
+  font-family: Arial, sans-serif;
+  background-color: rgb(145, 37, 37);
+  background-size: cover;
+
+
+
+
+}
+
+
+
+/* Left Hover Area */
+.left-hover-area {
+  position: absolute;
+  top: 0;
+  left: 0; /* Anchors it to the left side */
+  width: 60%; /* Restricts the hover area to the left half */
+  height: 100%; /* Full height of the section */
+  background: transparent; /* Keeps the hover area invisible */
+  overflow: hidden; /* Prevents content spilling */
+  pointer-events: auto; /* Allows mouse interaction */
+}
+
+/* Hidden Container within Left Hover Area */
+.left-hover-area .container {
+  position: absolute;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  top: 50%; /* Centers vertically */
+  left: -100%; /* Hidden off-screen initially */
+  transform: translateY(-50%); /* Vertical centering adjustment */
+  width: 85%; /* Fits within hover area */
+  opacity: 0; /* Initially invisible */
+  transition: left 0.7s ease, opacity 0.7s ease; /* Smooth slide-in effect */
+  background: url("pexels-git-stephen-gitau-302905-1686467.jpg");
+  background-size: cover;
+ height: 90vh;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Hover Effect */
+.left-hover-area:hover .container {
+  left: 0; /* Slides into the left half */
+  opacity: 1; /* Becomes visible */
+}
+
+/* Adjusting Content Area (Right Section) */
+.Content {
+  flex: 1; /* Ensures it takes available space */
+  padding: 20px;
+  text-align: left; /* Aligns the text to the left */
+  margin-left: 20px; /* Adds spacing between content and the slide-in area */
+}
+
+/* Styling for Flex Items */
+.flex-item {
+  margin-bottom: 15px;
+}
+
+.flex-item img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.flex-item p {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+
+
+
+/* Styling of the header*/
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 10px 20px;
+  z-index: 1000;
+  }
+  
+  
+  nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  }
+  
+  
+  .tad {
+  padding: 7px;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 1s ease, opacity 1s ease;
+  }
+  
+  
+  .tad:hover {
+  color: whitesmoke; 
+  }
+  
+  nav:hover .tad {
+  opacity: 0.3;
+  }
+  
+  nav:hover .tad:hover {
+  opacity: 1;
+  }
+  
+
+
+
+
+
+  
+
+
+      /* Button Styling */
+      .git-button{
+        position: absolute;
+        top: 90px;
+        right: 0;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        z-index: 1000;
+        background-color: maroon;
+        text-decoration: none;
+        border: none;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius:25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  
+      .git-button:hover {
+        background-color: #600000; /* Darker maroon on hover */
+      }
+
+
+
+
+      .fill-button{
+        position: absolute;
+        top: 140px;
+        right: 0;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        z-index: 1000;
+        background-color: maroon;
+        text-decoration: none;
+        border: none;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius:25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  
+      .fill-button:hover {
+        background-color: #600000; /* Darker maroon on hover */
+      }
+
+
+
+
+
+      /* Button Styling */
+      .next-button{
+        position: absolute;
+        top: 200px;
+        right: 0;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        z-index: 1000;
+        background-color: maroon;
+        text-decoration: none;
+        border: none;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius:25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  
+      .next-button:hover {
+        background-color: #600000; /* Darker maroon on hover */
+      }
+
+

@@ -1,0 +1,267 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background: url("pexels-enes-ozbil-33201300-27782555.jpg");
+    font-family: Arial, sans-serif;
+    background-color: black;
+    background-color: rgb(145, 37, 37);
+    background-size: cover;
+  }
+
+
+
+/* Styling of the header*/
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+    z-index: 1000;
+    }
+    
+    
+    nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    }
+    
+    
+    .tad {
+    padding: 7px;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 1s ease, opacity 1s ease;
+    }
+    
+    
+    .tad:hover {
+    color: whitesmoke; 
+    }
+    
+    nav:hover .tad {
+    opacity: 0.3;
+    }
+    
+    nav:hover .tad:hover {
+    opacity: 1;
+    }
+    
+  
+  
+  
+
+/* Contact Me Section */
+.contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .final {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    max-width: 1200px;
+    gap: 20px;
+  }
+    .c1{
+    color: black;
+    line-height: 1.8;
+    list-style-type: none;
+  }
+  .c2{
+    color: black;
+    line-height: 1.8;
+  }
+  .c3{
+    color: black;
+    line-height: 1.8;
+
+  }
+  .c4{
+    color: black;
+    line-height: 1.8;
+  }
+  .c5 {
+    grid-column: span 2;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .c5 p {
+    margin-bottom: 20px;
+    color: #ddd;
+  }
+  
+  /* Subscribe Form */
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .subscribe-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .subscribe-form input:hover {
+    background-color: #333;
+  }
+  
+  .subscribe-form button {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #ff6347;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .subscribe-form button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #ff6347;
+    transition: left 0.4s ease;
+  }
+  
+  .subscribe-form button:hover {
+    color: #000;
+  }
+  
+  .subscribe-form button:hover::before {
+    left: 0;
+  }
+  
+  /* Icons */
+  ul li i {
+    margin-right: 10px;
+    color: #ff6347;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .final {
+        grid-template-columns: 1fr;
+    }
+    .c5 {
+        grid-column: span 1;
+    }
+  }
+  
+
+
+
+
+
+  
+  /* MAP SECTION */
+  .map-container {
+  
+    position: relative;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+    height: 200px;
+
+  }
+
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  .map-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    transition: background 0.3s ease;
+  }
+
+  .map-overlay:hover {
+    background: rgba(0, 0, 0, 0);
+    pointer-events: none;
+  }
+
+  .map-overlay span {
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+
+
+
+
+
+  
+      /* Button Styling */
+      .next-button{
+        position: absolute;
+        top: 200px;
+        left: 0;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        z-index: 1000;
+        background-color: maroon;
+        text-decoration: none;
+        border: none;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius:25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  
+      .next-button:hover {
+        background-color: #600000; /* Darker maroon on hover */
+      }
+
