@@ -154,18 +154,6 @@ body {
   
   
 /* Header Styles */
-header {
-  position: fixed; /* Fixes the header at the top */
-  top: 0; /* Ensures the header stays at the very top */
-  left: 0; /* Aligns the header to the left */
-  width: 100%; /* Spans the full width of the page */
-  background-color: #333; /* Dark background for visibility */
-  color: white; /* White text for contrast */
-  padding: 15px 20px; /* Adds space inside the header */
-  z-index: 1000; /* Ensures the header appears above other elements */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-}
-
 /* Adjusting Content Area (Left Section) */
 .Edication {
   flex: 1; /* Ensures it takes available space */
@@ -243,6 +231,7 @@ body {
       /* Button Styling */
       .download-btn {
         position: absolute;
+        position: fixed;
         top: 80px;
         left: 0;
         display: inline-block;
@@ -273,6 +262,7 @@ body {
       /* Button Styling */
       .fill-button{
         position: absolute;
+        position: fixed;
         top: 140px;
         left: 0;
         display: inline-block;
@@ -300,6 +290,7 @@ body {
       /* Button Styling */
       .next-button{
         position: absolute;
+        position: fixed;
         top: 200px;
         left: 0;
         display: inline-block;
@@ -319,7 +310,6 @@ body {
       .next-button:hover {
         background-color: #600000; /* Darker maroon on hover */
       }
-
 
 
 

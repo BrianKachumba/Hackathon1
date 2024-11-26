@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   background-size: cover;
-  background: url("pexels-garrettmorrow-1337247.jpg");
+  background: url("pexels-garrettmorrow-1337247.jpg") no-repeat;
   font-family: Arial, sans-serif;
   background-color: rgb(145, 37, 37);
   background-size: cover;
@@ -136,6 +136,7 @@ header {
       /* Button Styling */
       .git-button{
         position: absolute;
+        position: fixed;
         top: 90px;
         right: 0;
         display: inline-block;
@@ -162,6 +163,7 @@ header {
       .fill-button{
         position: absolute;
         top: 140px;
+        position: fixed;
         right: 0;
         display: inline-block;
         padding: 10px 20px;
@@ -181,7 +183,9 @@ header {
         background-color: #600000; /* Darker maroon on hover */
       }
 
-
+.container{
+  color: gold;
+}
 
 
 
@@ -189,6 +193,7 @@ header {
       .next-button{
         position: absolute;
         top: 200px;
+        position: fixed;
         right: 0;
         display: inline-block;
         padding: 10px 20px;

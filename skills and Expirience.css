@@ -144,7 +144,8 @@ header {
       /* Button Styling */
       .download-btn {
         position: absolute;
-        top: 80px;
+        position: fixed;
+        top: 100px;
         left: 0;
         display: inline-block;
         padding: 10px 20px;
@@ -174,7 +175,8 @@ header {
       /* Button Styling */
       .fill-button{
         position: absolute;
-        top: 180px;
+        position: fixed;
+        top: 260px;
         left: 0;
         display: inline-block;
         padding: 10px 20px;
@@ -200,7 +202,8 @@ header {
 
       .more-button{
         position: absolute;
-        top: 140px;
+        position: fixed;
+        top: 200px;
         left: 0;
         display: inline-block;
         padding: 10px 20px;
@@ -227,7 +230,8 @@ header {
       /* Button Styling */
       .next-button{
         position: absolute;
-        top: 220px;
+        position: fixed;
+        top: 320px;
         left: 0;
         display: inline-block;
         padding: 10px 20px;
@@ -250,9 +254,43 @@ header {
 
 
 
+      .Edication {
+        line-height: 1.6;
+        color: green; /* Set default color to green */
+        margin-left: 10%;
+        margin-top: -300px;
+        
+    }
 
 
-      
+
+
+
+
+
+
+
+    /* Ensure the main section can scroll */
+.st_PG_section {
+  display: flex; /* Flexbox layout for the main section */
+  flex-direction: column; /* Stack content vertically */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+  height: auto; /* Full viewport height */
+  box-sizing: border-box; /* Include padding/borders in height */
+  padding: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
   /* Container styling */
   .container {
     display: flex;
@@ -263,7 +301,46 @@ header {
     text-align: center;
     width: 100%;
     max-width: 1000px; /* Restrict maximum width */
+
+
+
+
+    
   }
+
+
+
+
+@media (max-width:600px) {
+  
+/* Right hover area (image section) */
+.right-hover-area {
+  flex: 1; /* Takes up the other half of the section */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+  display: flex; /* Flexbox layout for the container */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  padding: 20px;
+  box-sizing: border-box;
+}
+  
+/* Image container */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 16px; /* Space between items */
+  justify-content: center; /* Center images horizontally */
+  align-items: flex-start; /* Align items to the top */
+  width: 100%; /* Full width of the right section */
+  height: auto; /* Allow height to adjust */
+  box-sizing: border-box;
+}
+}
+
+
+
+
+
   
   /* Heading styles */
   .container h3 {
@@ -276,10 +353,9 @@ header {
   /* Flexbox for items */
   .flex-item {
     position: relative;
-    padding: 10px;
     width: 200px; /* Fixed width */
     height: 250px; /* Fixed height */
-    overflow: hidden;
+    overflow: ;
     text-align: center;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -338,3 +414,17 @@ header {
   
   
   
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flex-item {
+      flex: 1 1 150px; /* Adjust for smaller screens */
+  }
+
+  .container {
+      gap: 8px; /* Smaller gaps on small screens */
+  }
+}
