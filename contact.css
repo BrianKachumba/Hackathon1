@@ -303,3 +303,31 @@ a{
   color: white;
   }
 
+
+
+  
+/* Bouncing text*/
+
+.bouncing-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff6347;
+  animation: bounce 2s infinite ease-in-out;
+  text-align: left;
+}
+
+/* Keyframe animation for bouncing */
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  25% {
+      transform: translateY(-20px);
+  }
+  50% {
+      transform: translateY(10px);
+  }
+  75% {
+      transform: translateY(-10px);
+  }
+}
