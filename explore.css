@@ -368,3 +368,11 @@ a{
       transform: translateY(-10px);
   }
 }
+
+
+@media (max-width: 768px) {
+  #facts-about-author {
+      display: none;
+  }
+}
+
