@@ -25,7 +25,7 @@ Virtual Studio Code- The latest version
  Installation Steps
 
 1. Clone the repo:
-git clone https://github.com/yourusername/yourproject.git
+git clone https://github.com/BrianKachumba/Hackathon1.git
 2. Hop into the project folder:
    cd your project
  
