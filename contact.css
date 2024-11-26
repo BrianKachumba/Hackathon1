@@ -1,278 +1,224 @@
 
+/* Body */
 body {
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    background: url("pexels-enes-ozbil-33201300-27782555.jpg");
-    font-family: Arial, sans-serif;
-    background-color: black;
-    background-color: rgb(145, 37, 37);
-    background-size: cover;
-  }
+  margin: 0;
+  padding: 0;
+  background: url('pexels-enes-ozbil-33201300-27782555.jpg') no-repeat center center fixed; /* Set the background image */
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
 
-
-
-/* Styling of the header*/
-
+/* Header Styling */
 header {
-    position: sticky;
-    top: 0;
-    padding: 10px 20px;
-    z-index: 1000;
-    }
-    
-    
-    nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    }
-    
-    
-    .tad {
-    padding: 7px;
-    color: white;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: color 1s ease, opacity 1s ease;
-    }
-    
-    
-    .tad:hover {
-    color: whitesmoke; 
-    }
-    
-    nav:hover .tad {
-    opacity: 0.3;
-    }
-    
-    nav:hover .tad:hover {
-    opacity: 1;
-    }
-    
-  
-  
-  
+  position: sticky;
+  top: 0;
+  background-color: black;
+  padding: 10px 20px;
+  z-index: 1000;
+  background: none;
+}
 
-/* Contact Me Section */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tad {
+  padding: 7px;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 1s ease, opacity 1s ease;
+}
+
+.tad:hover {
+  color: whitesmoke;
+}
+
+nav:hover .tad {
+  opacity: 0.3;
+}
+
+nav:hover .tad:hover {
+  opacity: 1;
+}
+
+/* Map Section */
+.map-container {
+  margin: 20px auto;
+  position: relative;
+  max-width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Contact Section */
 .contact-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .final {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 90%;
-    max-width: 1200px;
-    gap: 20px;
-  }
-    .c1{
-    color: black;
-    line-height: 1.8;
-    list-style-type: none;
-  }
-  .c2{
-    color: black;
-    line-height: 1.8;
-  }
-  .c3{
-    color: black;
-    line-height: 1.8;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background to contrast the background image */
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1200px;
+}
 
-  }
-  .c4{
-    color: black;
-    line-height: 1.8;
-  }
-  .c5 {
-    grid-column: span 2;
-    background-color: #111;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .c5 p {
-    margin-bottom: 20px;
-    color: #ddd;
-  }
-  
-  /* Subscribe Form */
-  .subscribe-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .subscribe-form input {
-    padding: 10px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #222;
-    color: #fff;
-    outline: none;
-    transition: all 0.3s ease;
-  }
-  
-  .subscribe-form input:hover {
-    background-color: #333;
-  }
-  
-  .subscribe-form button {
-    padding: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-    border: 2px solid #ff6347;
-    color: #fff;
-    background-color: transparent;
-    border-radius: 5px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .subscribe-form button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: #ff6347;
-    transition: left 0.4s ease;
-  }
-  
-  .subscribe-form button:hover {
-    color: #000;
-  }
-  
-  .subscribe-form button:hover::before {
-    left: 0;
-  }
-  
-  /* Icons */
-  ul li i {
-    margin-right: 10px;
-    color: #ff6347;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .final {
-        grid-template-columns: 1fr;
-    }
-    .c5 {
-        grid-column: span 1;
-    }
-  }
-  
+.final {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
 
+.final h2, .final h3 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
 
+.final ul {
+  list-style: none;
+}
 
+.final ul li {
+  margin-bottom: 8px;
+}
 
+.final ul li i {
+  margin-right: 8px;
+  color: #4CAF50;
+}
 
-  
-  /* MAP SECTION */
+/* Subscribe Form */
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subscribe-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.subscribe-form button {
+  padding: 10px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background: #45a049;
+}
+
+/* Button Section */
+.button-container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.next-button {
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background: #45a049;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+
+  /* Adjust map container height on mobile */
   .map-container {
-  
-    position: relative;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    overflow: hidden;
-    height: 200px;
-
+      height: 200px;
+      margin-bottom: 20px;
   }
 
-  .map-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-
-  .map-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.5rem;
-    transition: background 0.3s ease;
-  }
-
-  .map-overlay:hover {
-    background: rgba(0, 0, 0, 0);
-    pointer-events: none;
-  }
-
-  .map-overlay span {
-    font-size: 2rem;
-    animation: bounce 2s infinite;
-  }
-
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-
-  @media (max-width: 768px) {
-    .container {
+  /* Stack the navigation links vertically for mobile */
+  #header nav {
       flex-direction: column;
       align-items: center;
-    }
   }
 
+  #header nav a {
+      padding: 10px 0;
+  }
 
+  /* Stack the contact section columns vertically */
+  .final {
+      grid-template-columns: 1fr;
+  }
 
+  .final h2, .final h3 {
+      font-size: 18px;
+  }
 
+  /* Adjust the font size of list items */
+  .final ul li {
+      font-size: 14px;
+  }
 
+  /* Adjust subscribe form input and button sizes for mobile */
+  .subscribe-form input, .subscribe-form button {
+      font-size: 14px;
+  }
 
-  
-      /* Button Styling */
-      .next-button{
-        position: absolute;
-        top: 200px;
-        left: 0;
-        position: fixed;
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 16px;
-        color: white;
-        z-index: 1000;
-        background-color: maroon;
-        text-decoration: none;
-        border: none;
-        border-top-right-radius: 25px;
-        border-bottom-right-radius:25px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-  
-      .next-button:hover {
-        background-color: #600000; /* Darker maroon on hover */
-      }
+  /* Make the button slightly smaller on mobile */
+  .button-container .next-button {
+      font-size: 14px;
+  }
+}
 
+/* Extra Small Devices (Phones in Portrait Mode) */
+@media (max-width: 480px) {
+  /* Further adjustment for very small screens */
+  .tad {
+      font-size: 1rem;
+  }
 
+  /* Further reduce the size of map overlay text */
+  .map-overlay {
+      font-size: 12px;
+  }
 
+  /* Reduce font size of subscribe form input fields */
+  .subscribe-form input, .subscribe-form button {
+      font-size: 12px;
+  }
 
-      @media (max-width:600px) {
-        .contact-me {
-          display: flex;
-          width: 100%;
-        }
-        
-      }
+  .next-button {
+      font-size: 12px;
+  }
+}

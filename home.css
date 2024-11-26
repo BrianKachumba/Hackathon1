@@ -1,167 +1,211 @@
-body{
-margin: 20px;
-font-family: Arial, sans-serif;
-background-color: black;
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-
-.Name_div{
-margin: 0;
-font-family: Arial, sans-serif;
-margin-left: 66%;
-width: max-content;
-height: 35vh;
-background-color: black;
-
+/* Body */
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
 }
 
+/* Name Section */
+.Name_div {
+    margin: 0 auto; /* Center the section horizontally */
+    width: max-content;
+    height: 35vh;
+    background-color: black;
+    text-align: center; /* Center text for smaller screens */
+}
 
-
-
-
-/* Names styling */
 .names {
-font-size: 65px;
-font-weight: 1;
-font-family: 'Times New Roman', Times, serif;
+    font-size: 65px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .name {
-display: block;
-margin-right: 50px;
-margin: 10px 0;
-cursor: pointer;
-transition: font-family 0.3s ease, font-size 0.1s ease, color 0.3s ease;
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: font-family 0.3s ease, font-size 0.1s ease, color 0.3s ease;
 }
 
 .name:hover {
-font-family: 'Georgia', serif;
-font-size: 70px;
-color: gold;
+    font-family: 'Georgia', serif;
+    font-size: 70px;
+    color: gold;
 }
 
-.Name_header{
-
-margin-top: 200px;
-margin-right: 0;
-overflow: hidden;
-width: auto;
-color: goldenrod;
-
-
-
+.Name_header {
+    margin-top: 200px;
+    overflow: hidden;
+    width: auto;
+    color: goldenrod;
 }
 
-
-
-/* Styling of the header*/
-
+/* Header */
 header {
-position: sticky;
-top: 0;
-background: black;
-padding: 10px 20px;
-z-index: 1000;
+    position: sticky;
+    top: 0;
+    background: black;
+    padding: 10px 20px;
+    z-index: 1000;
 }
 
-a{
+a {
     text-decoration: none;
 }
-nav {
-display: flex;
-justify-content: center;
-gap: 20px;
-}
 
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
 .tad {
-padding: 7px;
-text-decoration: none;
-color: white;
-font-size: 1.2rem;
-text-transform: uppercase;
-cursor: pointer;
-transition: color 1s ease, opacity 1s ease;
+    padding: 7px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 1s ease, opacity 1s ease;
 }
 
-
 .tad:hover {
-color: whitesmoke; 
+    color: whitesmoke;
 }
 
 nav:hover .tad {
-opacity: 0.3;
+    opacity: 0.3;
 }
 
 nav:hover .tad:hover {
-opacity: 1;
+    opacity: 1;
 }
 
-
-/* Button styling */
-
+/* Button */
 .button-container {
-text-align: center;
-
-
+    text-align: center;
 }
 
 .fill-button {
-position: relative;
-overflow: hidden;
-margin-top: 100px;
-background: transparent;
-color: rgb(91, 193, 75);
-border: 2px solid rgb(237, 35, 35);
-padding: 10px 30px;
-font-size: 16px;
-font-weight: bold;
-border-radius: 5px;
-cursor: pointer; 
-transition: color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+    background: transparent;
+    color: rgb(91, 193, 75);
+    border: 2px solid rgb(237, 35, 35);
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .fill-button::before {
-content: '';
-position: absolute;
-top: 100%;
-left: 0;
-width: 100%;
-height: 100%;
-background: gold;
-z-index: -1;
-transition: top 0.5s ease;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: gold;
+    z-index: -1;
+    transition: top 0.5s ease;
 }
 
 .fill-button:hover::before {
-top: 0;
+    top: 0;
 }
 
 .fill-button:hover {
-color: white;
+    color: white;
 }
 
-
-
-
-
-
-/* Social Media hundles Section */
+/* Social Media */
 .socials {
-margin-top: 20px;
-display: flex;
-justify-content: center;
-gap: 15px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 .social-icon {
-color: white;
-font-size: 1.5rem;
-text-decoration: none;
-transition: color 0.3s ease;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-color: goldenrod;
+    color: goldenrod;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust Name Section for Medium Screens */
+    .Name_div {
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+
+    .names {
+        font-size: 50px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .Name_header {
+        margin-top: 150px;
+    }
+
+    /* Adjust Header Navigation */
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tad {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust Name Section for Small Screens */
+    .names {
+        font-size: 40px;
+    }
+
+    .name {
+        font-size: 35px;
+    }
+
+    .Name_header {
+        margin-top: 100px;
+    }
+
+    /* Adjust Button */
+    .fill-button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    /* Social Media Icons */
+    .socials {
+        gap: 10px;
+    }
+
+    .social-icon {
+        font-size: 1.2rem;
+    }
 }
