@@ -46,7 +46,7 @@ Let’s Connect!
 We’re here for you! If you have any questions or feedback, feel free to reach out:
 
 Brian Kachumba – briankachumba4@gmail.com
-Project Link: 
+Project Link: https://jocular-taffy-ebbf28.netlify.app/
 
 
 Thanks for stopping by, Can’t wait for you to dive in and make amazing things happen. Happy coding!
