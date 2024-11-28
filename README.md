@@ -50,6 +50,16 @@ Project Link: https://jocular-taffy-ebbf28.netlify.app/
 
 
 Thanks for stopping by, Can’t wait for you to dive in and make amazing things happen. Happy coding!
+Group member for GROUP 22
+ Group Members
+1. Hillary Kiprotich https://github.com/Machuge27/SWEngineering/tree/main/Hackathos/Portfolio
+2. *Hassan Khalifa- https://github.com/Faruq-Feroz/Hassan-Faruq
+3 Saddam Saku - https://github.com/SaddamTechie/saddamtechie.github.io
+4. Rashid said -https://github.com/SirRasheed/portfoliorasheed.git
+5. Tom Obande - https://github.com/tbrowns/portfolio-group-22
+6. Alexander Brian  https://github.com/BrianKachumba/Hackathon1.git
+7. Zachariah Evans https://github.com/Eva254-ke/myportfolio
+8. 8. Joshua Ogallo  https://github.com/ogallj/my_portfolio 
 
 
 
